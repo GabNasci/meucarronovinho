@@ -1,0 +1,194 @@
+body {
+    font-family: 'Raleway', Arial;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #FFCB00;
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 0 0 10px #CCC;
+}
+
+header img {
+    width: 250px;
+}
+
+nav {
+    display: block;
+}
+
+header nav ul {
+    background-color: black;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+}
+
+header nav ul li a {
+    color: #FFF;
+    font-weight: 900;
+    text-decoration: none;
+
+}
+
+nav ul li a i {
+    padding: 10px;
+}
+
+.menu {
+    float: right;
+    border: 1px solid red;
+    color: red;
+    margin: 15px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.block {
+    display: none;
+}
+
+main {
+    margin-top: 20px;
+    width: 90%;
+    margin-left: 10px;
+}
+
+.banner {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+.grid {
+    grid-template-columns: 100%;
+}
+
+.grid .coluna{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.grid .coluna img {
+    width: 80%;
+}
+
+.grid2 {
+    display: grid; 
+    grid-template-columns: 30% 70%;
+   
+
+}
+
+.grid2 .coluna {
+    text-align: center;
+
+}
+
+.grid2 .coluna img {
+    width: 100%;
+}
+
+.valor {
+    color: red;
+}
+
+div p {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #FFCB00;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+div p i {
+    padding: 10px;
+}
+
+footer p {
+    text-align: center;
+   padding: 10px;
+}
+
+footer a {
+    margin: 10px;
+    background-color: white;
+    color: red;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+/*----- Desktop -----*/
+
+@media (min-width: 961px) {
+
+    .block {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    nav {
+        float: right;
+        margin-top: 5px;
+    }
+
+    header nav ul {
+        background-color: #FFCB00;
+        margin-right: 20px;
+        padding: 0;
+    }
+
+    header nav ul li {
+    background-color: #FFCB00;
+    display: inline-block;
+    width: auto;
+    padding: 5px;
+    }
+    
+    .banner {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    main {
+        margin: 0;
+        width: 100%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 320px);
+        margin-left: 17%;
+    }
+}
